@@ -1,19 +1,16 @@
 <template>
-  <view class="imagelist-container">
-    <div
-      class="image-item"
-      v-for="(item, index) in imageSrc"
-      :key="item"
-      @click="doShowItem(item, index)"
-    >
-      <image class="image" mode="aspectFill" :src="item" />
-    </div>
-
-    <nut-imagepreview
-      :show="showPreview"
-      :images="imgData"
-      @close="doHideFn"
-    />
+  <view>
+    <view class="imagelist-container">
+      <div
+        class="image-item"
+        v-for="(item, index) in imageSrc"
+        :key="item"
+        @click="doShowItem(item, index)"
+      >
+        <image class="image" mode="aspectFill" :src="item" />
+      </div>
+    </view>
+    <nut-imagepreview :show="showPreview" :images="imgData" @close="doHideFn" />
   </view>
 </template>
 

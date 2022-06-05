@@ -1,6 +1,7 @@
 <template>
   <view class="index">
     <ImageList :imageSrc="imageSrc"></ImageList>
+    <nut-button type="primary">主要按钮</nut-button>
   </view>
 </template>
 
