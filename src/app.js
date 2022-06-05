@@ -1,5 +1,13 @@
 import { createApp } from "vue"
-import { Button, Toast, ImagePreview } from "@nutui/nutui-taro"
+import {
+  Button,
+  Popup,
+  Swiper,
+  SwiperItem,
+  OverLay,
+  Toast,
+  ImagePreview,
+} from "@nutui/nutui-taro"
 
 import "./app.scss"
 
@@ -11,5 +19,9 @@ const App = createApp({
 App.use(Button)
   .use(Toast)
   .use(ImagePreview)
+  .use(OverLay)
+  .use(Popup)
+  .use(Swiper)
+  .use(SwiperItem)
 
 export default App
